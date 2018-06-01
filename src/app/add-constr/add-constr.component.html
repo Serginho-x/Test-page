@@ -1,0 +1,11 @@
+<div [hidden]="submitted">
+	{{brr.name}}
+</div>
+
+<div [hidden]="!submitted">
+	 <input   [(ngModel)]="return" size='60' >
+</div>
+
+<button class="btn btn-primary" (click)="submitted1()">Edit</button>
+<button class="btn btn-primary" (click)="submitted2()">OK</button>
+<p></p>

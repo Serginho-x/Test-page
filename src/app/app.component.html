@@ -1,0 +1,19 @@
+<h1>
+ Тестовая страница
+</h1>
+
+
+
+<div><h3>Введите заметку</h3></div>
+  	 <input class="content"  [(ngModel)]="text" size='60' maxlength='20'>
+     <p> <button (click)="show()">Добавить</button></p>
+
+    
+
+<div class="container">
+	<app-add-constr 
+	*ngFor="let u of texts"
+	[brr]="u"
+	></app-add-constr>
+
+</div>
